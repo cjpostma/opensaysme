@@ -26,6 +26,6 @@ public class RestController {
     private static Object openGarageHandler(Request req, Response res) {
 
         GARAGE_OPENER.operateGarageDoor();
-        return null;
+        return "Well yeah, that happened";
     }
 }
