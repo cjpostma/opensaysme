@@ -11,10 +11,10 @@ public class App {
 
 private static final Logger logger = LogManager.getLogger();
 
-    public static void main(String... args) {
-
-        logger.info("Hello World!");
+    public static void main(String... args) throws InterruptedException {
         RestController.publish();
-        while(true);
+        while(true){
+            Thread.sleep(1000);
+        }
     }
 }
